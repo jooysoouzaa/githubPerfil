@@ -1,0 +1,45 @@
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 16px;
+  gap: 16px;
+}
+
+@media only screen and (max-width: 700px){
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
+
+@media only screen and (max-width: 595px){
+  .list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+.listItem {
+  list-style: none;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.itemName b,
+.itemLanguage b {
+  margin-right: 4px;
+  color: var(--corSecundaria);
+}
+.itemLink {
+  display: block;
+  background-color: var(--corPrincipal);
+  color: var(--corSecundaria);
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  margin-top: 8px;
+  text-decoration: none;
+}

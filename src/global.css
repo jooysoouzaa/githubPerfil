@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* CONFIGURAÇÕES DA SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2b2c30;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background: #63dbf9;
+  border: 1px solid #0E191A;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  background: #63dbf9;
+  border: 1px solid #2b2c30;
+}
+
+*::selection {
+  color: #fff;
+  background: #7312FA;
+  -webkit-text-fill-color: #fff;
+}
+
+html {
+  height: 100vh;
+}
+
+.container {
+  max-width: 1260px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+:root {
+  --corPrincipal: #63dbf9;
+  --corSecundaria: #2b2c30;
+}
+
+.usuarioEntrada {
+  background-color: var(--corSecundaria);
+  color: var(--corPrincipal);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.usuarioEntrada input{
+  background-color: transparent;
+  border: 1px solid var(--corPrincipal);
+  color: var(--corPrincipal);
+  margin-left: 4px;
+  padding: 4px;
+  border-radius: 4px;
+  outline: none;
+}
+
+.usuarioEntrada input:focus{
+  background-color: transparent;
+  border: 1px solid var(--corPrincipal);
+  color: var(--corPrincipal);
+}
+
+@media only screen and (max-width: 402px){
+  .usuarioEntrada input{
+    margin-top: 8px;
+  }
+}
